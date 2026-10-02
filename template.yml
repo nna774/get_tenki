@@ -5,7 +5,9 @@ Resources:
     Type: AWS::Serverless::Function 
     Properties: 
       Handler: lambda.handler
-      Runtime: ruby2.5 
+      Runtime: ruby3.4
+      Architectures:
+        - arm64
       Timeout: 30
       Role: arn:aws:iam::486414336274:role/save-tenki
       FunctionName: get-tenki
