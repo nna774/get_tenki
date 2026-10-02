@@ -5,7 +5,7 @@ require 'date'
 
 BUCKET = ENV['BUCKET']
 
-BASE_URI = 'https://www.data.jma.go.jp/fcd/yoho/gyogyou/'
+BASE_URI = 'https://www.data.jma.go.jp/yoho/gyogyou/'
 
 def handler(event:, context:)
   save('jikkyo12.txt')
